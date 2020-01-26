@@ -1,5 +1,6 @@
 import '@fortawesome/fontawesome-free/css/all.css';
 import Vue from 'vue';
+import '@/assets/style.scss';
 import App from './App.vue';
 
 import router from './routes/router';
