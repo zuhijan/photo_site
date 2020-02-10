@@ -8,6 +8,7 @@ const router = new VueRouter({
     mode: 'history',
     routes, // short for routes: routes
     linkActiveClass: 'active',
+    base: '/photo_site/',
 });
 
 export default router;
