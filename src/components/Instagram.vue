@@ -52,43 +52,43 @@
          return {
              images: [
                  {
-                 path: './1.JPG',
+                 path: './images/instagram/Insta 1.JPG',
                  href: 'https://www.instagram.com/p/B8K6dljhIZS/'
                  },
                  {
-                 path: './2.JPG',
+                 path: './images/instagram/Insta 2.JPG',
                  href: 'https://www.instagram.com/p/B7EYODZhU5D/'
                  },
                  {
-                 path: './3.JPG',
+                 path: './images/instagram/Insta 3.JPG',
                  href: 'https://www.instagram.com/p/B5qIsVfhfp9/'
                  },
                  {
-                 path: './4.JPG',
+                 path: './images/instagram/Insta 4.JPG',
                  href: 'https://www.instagram.com/p/B4-iPs7hGzn/'
                  },
                  {
-                 path: './5.JPG',
+                 path: './images/instagram/Insta 5.JPG',
                  href: 'https://www.instagram.com/p/B4iFlvtBLW4/'
                  },
                  {
-                 path: './6.JPG',
+                 path: './images/instagram/Insta 6.JPG',
                  href: 'https://www.instagram.com/p/B3t5CWYF1If/'
                  },
                  {
-                 path: './7.JPG',
+                 path: './images/instagram/Insta 7.JPG',
                  href: 'https://www.instagram.com/p/B3SOdF0BrUH/'
                  },
                  {
-                 path: './8.JPG',
+                 path: './images/instagram/Insta 8.JPG',
                  href: 'https://www.instagram.com/p/B2R5tVaBQdr/'
                  },
                  {
-                 path: './9.JPG',
+                 path: './images/instagram/Insta 9.JPG',
                  href: 'https://www.instagram.com/p/B3y6J2PhdWx/'
                  },
                  {
-                 path: './10.JPG',
+                 path: './images/instagram/Insta 10.JPG',
                  href: 'https://www.instagram.com/p/B4VYWoqhEFj/'
                  },
              ]

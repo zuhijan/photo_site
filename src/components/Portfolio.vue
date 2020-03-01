@@ -10,18 +10,20 @@
                         :key="card.title"
                         :cols="card.flex"
                 >
-                    <v-card>
-                        <v-img
-                                :src="card.src"
-                                class="white--text align-end"
-                                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                                height="200px"
-                        >
-                            <v-card-title v-text="card.title"></v-card-title>
-                        </v-img>
+                    <router-link class="portfolio__link"  :to="card.link">
+                        <v-card>
+                            <v-img
+                                    :src="card.src"
+                                    class="white--text align-end card-zoom"
+                                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                                    height="300px"
+                            >
+                                <v-card-title v-text="card.title"></v-card-title>
+                            </v-img>
 
 
-                    </v-card>
+                        </v-card>
+                    </router-link>
                 </v-col>
             </v-row>
         </v-container>
@@ -33,15 +35,46 @@
         name: "cards",
         data: () => ({
             cards: [
-                { title: 'WEDDING', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-                { title: 'ONE', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-                { title: 'FAMILY', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
-                { title: 'LOVE STORY', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+                {
+                    title: 'WEDDING',
+                    src: './images/category/wedding/wedding1.jpg',
+                    flex: 6,
+                    link: '/wedding'
+                },
+                {
+                    title: 'ONE',
+                    src: './images/category/one/one1.jpg',
+                    flex: 6,
+                    link: '/one'
+
+                },
+                {
+                    title: 'FAMILY',
+                    src: './images/category/family/family1.jpg',
+                    flex: 6,
+                    link: '/family'
+
+                },
+                {
+                    title: 'LOVE STORY',
+                    src: './images/category/lovestory/lovestory1.jpg',
+                    flex: 6,
+                    link: '/lovestory'
+
+                },
             ],
         }),
     }
 </script>
 
-<style scoped>
+<style scoped lang="sass">
+.v-card
+    -webkit-box-shadow: none
+    box-shadow: none
+
+.card-zoom
+    transition: all .2s ease-in
+    &:hover
+        transform: scale(1.01)
 
 </style>

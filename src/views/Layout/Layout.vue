@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <app-header></app-header>
+        <app-header>LYUBITSKAYA PHOTO</app-header>
 
         <v-toolbar max-height="64px" class="header__toolbar">
             <v-spacer></v-spacer>

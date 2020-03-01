@@ -5,6 +5,8 @@ import Portfolio from "@/components/Portfolio";
 import Contacts from "@/components/Contacts";
 import Instagram from "@/components/Instagram";
 
+import One from "@/views/Pages/One";
+
 const routes = [
     {
         path: '/',
@@ -21,8 +23,7 @@ const routes = [
             {
                 path: '/portfolio',
                 name: 'portfolio',
-                component: Portfolio
-
+                component: Portfolio,
             },
             {
                 path: '/contacts',
@@ -35,6 +36,12 @@ const routes = [
                 name: 'instagram',
                 component: Instagram
             },
+            {
+                path: '/one',
+                name: 'One',
+                component: One
+            },
+
         ]
     },
 ];
