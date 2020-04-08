@@ -1,23 +1,29 @@
 import Layout from '@/views/Layout/Layout.vue';
 
-import Gallary from "@/components/Gallary";
+import Home from "@/components/Home";
 import Portfolio from "@/components/Portfolio";
 import Contacts from "@/components/Contacts";
 import Instagram from "@/components/Instagram";
+import About from "@/components/About";
 
-import One from "@/views/Pages/One";
+import One from "@/components/Portfolio/One";
 
 const routes = [
     {
         path: '/',
         component: Layout,
-        redirect: '/gallary',
-        name: 'Home',
+        redirect: '/home',
         children: [
             {
-                path: '/gallary',
-                name: 'Gallary',
-                component: Gallary
+                path: '/home',
+                name: 'Home',
+                component: Home
+
+            },
+            {
+                path: '/about',
+                name: 'About',
+                component: About
 
             },
             {

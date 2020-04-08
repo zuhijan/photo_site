@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar max-height="64px">
+    <v-app-bar class="header" max-height="64px" @click="goToHome">
         <v-spacer></v-spacer>
         <v-toolbar-title>
             <slot></slot>
@@ -10,10 +10,17 @@
 
 <script>
     export default {
-        name: "app-header"
+        name: "app-header",
+        methods: {
+            goToHome() {
+                this.$router.push({name: 'Home'});
+            }
+        }
     }
 </script>
 
 <style scoped>
-
+    .header {
+        cursor: pointer;
+    }
 </style>
