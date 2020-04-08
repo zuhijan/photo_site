@@ -1,14 +1,17 @@
 <template>
-    <v-row class="shadow-display">
-        <v-col cols="12" sm="6" offset-sm="3">
+    <v-row class="shadow-display" wrap>
+        <v-col cols="12" sm="10" offset-sm="1">
             <v-card>
                 <v-container fluid>
-                    <v-row>
+                    <v-row wrap>
                         <v-col
                                 v-for="url in images"
                                 :key="url.path"
                                 class="d-flex child-flex"
-                                cols="4"
+                                cols="12"
+                                xs="12"
+                                sm="6"
+                                md="4"
                         >
                             <a target="_blank" :href="url.href" class="card__block">
                                 <v-card flat tile class="d-flex">
@@ -124,8 +127,8 @@
 
 .card__icons
     position: absolute
-    top: 40%
-    left: 35%
+    top: calc(45%)
+    left: calc(40%)
     opacity: 0
     transition: opacity .2s ease-in
 
