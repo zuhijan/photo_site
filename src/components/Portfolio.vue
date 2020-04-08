@@ -1,16 +1,14 @@
 <template>
-    <v-card
-            class="mx-auto"
-            max-width="1020"
-    >
         <v-container fluid>
-            <v-row dense>
+            <v-row dense wrap>
                 <v-col
                         v-for="card in cards"
                         :key="card.title"
-                        :cols="card.flex"
+                        cols="12"
+                        xs="12"
+                        sm="6"
                 >
-                    <router-link class="portfolio__link"  :to="card.link">
+                    <router-link class="portfolio__link" :to="card.link">
                         <v-card>
                             <v-img
                                     :src="card.src"
@@ -27,43 +25,40 @@
                 </v-col>
             </v-row>
         </v-container>
-    </v-card>
 </template>
 
 <script>
     export default {
         name: "cards",
-        data: () => ({
-            cards: [
-                {
-                    title: 'WEDDING',
-                    src: './images/category/wedding/wedding1.jpg',
-                    flex: 6,
-                    link: '/wedding'
-                },
-                {
-                    title: 'ONE',
-                    src: './images/category/one/one1.jpg',
-                    flex: 6,
-                    link: '/one'
+        data () {
+           return {
+               cards: [
+                   {
+                       title: 'WEDDING',
+                       src: './images/category/wedding/wedding1.jpg',
+                       link: '/wedding'
+                   },
+                   {
+                       title: 'ONE',
+                       src: './images/category/one/one1.jpg',
+                       link: '/one'
 
-                },
-                {
-                    title: 'FAMILY',
-                    src: './images/category/family/family1.jpg',
-                    flex: 6,
-                    link: '/family'
+                   },
+                   {
+                       title: 'FAMILY',
+                       src: './images/category/family/family1.jpg',
+                       link: '/family'
 
-                },
-                {
-                    title: 'LOVE STORY',
-                    src: './images/category/lovestory/lovestory1.jpg',
-                    flex: 6,
-                    link: '/lovestory'
+                   },
+                   {
+                       title: 'LOVE STORY',
+                       src: './images/category/lovestory/lovestory1.jpg',
+                       link: '/lovestory'
 
-                },
-            ],
-        }),
+                   },
+               ],
+           }
+        },
     }
 </script>
 
