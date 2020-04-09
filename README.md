@@ -1,4 +1,9 @@
 # lyubitskaya
+ДЕМО: https://zuhijan.github.io/photo_site/
+
+### Описание
+Домашний проект на VUE.js + Vuetify
+
 
 ## Project setup
 ```

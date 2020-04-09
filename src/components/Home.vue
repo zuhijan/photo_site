@@ -5,8 +5,8 @@
                 <v-container fluid>
                     <v-row>
                         <v-col
-                                v-for="card in cards"
-                                :key="card"
+                                v-for="(card, i) in cards"
+                                :key="i"
                                 class="d-flex child-flex"
                                 :cols="card.flex"
                         >

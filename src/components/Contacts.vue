@@ -1,6 +1,6 @@
 <template>
-    <v-container>
-        <p class="text-center contacts__title mb-5">
+    <v-container class="mt-20 pt-50" >
+        <p class="text-center contacts__title pt-50 ml-auto mr-auto">
             Если вы хотите забронировать дату, уточнить детали съемки или задать любой другой вопрос, воспользуйтесь формой снизу
             или свяжитесь со мной любым удобным способом. </p>
         <v-row class="d-flex justify-space-between">
@@ -146,6 +146,5 @@
 <style scoped lang="sass">
     .contacts__title
         max-width: 80%
-        margin: 0 auto
 
 </style>
